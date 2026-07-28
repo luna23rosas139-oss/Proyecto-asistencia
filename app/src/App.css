@@ -1,0 +1,166 @@
+.app {
+ width: 100%;
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 24px;
+ background:
+   linear-gradient(
+     160deg,
+     #063ba2 0%,
+     #1456bd 55%,
+     #073696 100%
+   );
+}
+
+
+.role-selection {
+ width: 100%;
+ max-width: 430px;
+ min-height: 720px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding: 35px 28px;
+ text-align: center;
+}
+
+
+.app-logo {
+ margin-bottom: 22px;
+ font-size: 74px;
+ line-height: 1;
+}
+
+
+.app-title {
+ width: 100%;
+ margin: 0;
+ color: #ffffff;
+ font-size: 43px;
+ font-weight: 800;
+ line-height: 1.08;
+ letter-spacing: -1px;
+ text-align: center;
+}
+
+
+.app-subtitle {
+ margin: 12px 0 52px;
+ color: rgba(255, 255, 255, 0.92);
+ font-size: 18px;
+ line-height: 1.4;
+ text-align: center;
+}
+
+
+.role-buttons {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ gap: 18px;
+}
+
+
+.role-button {
+ width: 100%;
+ min-height: 66px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ border: none;
+ border-radius: 999px;
+ padding: 12px 20px;
+ font-size: 19px;
+ font-weight: 800;
+ cursor: pointer;
+ box-shadow: 0 10px 22px rgba(0, 25, 85, 0.18);
+ transition:
+   transform 0.2s ease,
+   box-shadow 0.2s ease;
+}
+
+
+.role-button:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 14px 28px rgba(0, 25, 85, 0.25);
+}
+
+
+.role-button:active {
+ transform: translateY(0);
+}
+
+
+.button-icon {
+ font-size: 21px;
+}
+
+
+.student-button {
+ background: #ffffff;
+ color: #0b43a8;
+}
+
+
+.teacher-button {
+ background: #ff9800;
+ color: #ffffff;
+}
+
+
+.admin-button {
+ background: #292f99;
+ color: #ffffff;
+}
+
+
+.app-version {
+ margin: 50px 0 0;
+ color: rgba(255, 255, 255, 0.92);
+ font-size: 16px;
+ text-align: center;
+}
+
+
+@media (max-width: 480px) {
+ .app {
+   padding: 0;
+ }
+
+
+ .role-selection {
+   min-height: 100vh;
+   padding: 30px 24px;
+ }
+
+
+ .app-logo {
+   font-size: 66px;
+ }
+
+
+ .app-title {
+   font-size: 36px;
+ }
+
+
+ .app-subtitle {
+   margin-bottom: 42px;
+ }
+
+
+ .role-button {
+   min-height: 62px;
+   font-size: 17px;
+ }
+
+
+ .app-version {
+   margin-top: 42px;
+ }
+}
+
